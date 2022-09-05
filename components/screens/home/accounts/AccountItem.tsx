@@ -3,10 +3,13 @@ import React, { FC } from 'react'
 import { IAccount } from './types'
 
 
-const AccountItem:FC<{account: IAccount}> = ({account}) => {
+const AccountItem:FC<{account: IAccount}> = ({account: {name, currency, cardNumber, balance,}}) => {
   return (
     <View>
-      <Text>{account.name}</Text>
+      <Text>{name}</Text>
+      <Text>{currency}</Text>
+      <Text>**{cardNumber.slice(-4)}</Text>
+      <Text style={{fontWeight:'bold'}}>{balance}</Text>
     </View>
   )
 }

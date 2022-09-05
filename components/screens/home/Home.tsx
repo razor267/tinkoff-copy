@@ -3,7 +3,7 @@ import React from "react";
 import Header from "./Header";
 import Stories from "./stories/Stories";
 import Accounts from "./accounts/Accounts";
-import ApplyNewProducts from "./accounts/apply-new-products/applyNewProducts.";
+import ApplyNewProducts from "./accounts/apply-new-products/ApplyNewProducts";
 
 const Home = () => {
 	return (

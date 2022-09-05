@@ -1,4 +1,4 @@
-import { View, Text, Alert } from "react-native";
+import { Alert } from "react-native";
 import React, { useState } from "react";
 import Padding from "../../../../../ui/Padding";
 import Button from "../../../../../ui/Button";
@@ -37,10 +37,9 @@ const ApplyNewProducts = () => {
 				timestamp: serverTimestamp(),
 				userId: user?.uid,
 				balance: 0,
-				cardNumber: '1234 1234 1234 4567', //здесь будет функция генерации 4 чисел по 4цифры
+				cardNumber: "1234 1234 1234 4567", //здесь будет функция генерации 4 чисел по 4цифры
 				currency,
-				name: typeCard
-
+				name: typeCard,
 			});
 		} catch (error) {
 			if (error instanceof Error) {
